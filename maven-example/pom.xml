@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jfrog.test</groupId>
     <artifactId>multi</artifactId>
-    <version>3.7-SNAPSHOT</version>
+    <version>3.7.6</version>
     <packaging>pom</packaging>
     <name>Simple Multi Modules Build</name>
 
@@ -25,19 +25,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>Robs-MacBook-Pro.local-releases</name>
-            <url>http://localhost:8081/artifactory/libs-release-local</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Robs-MacBook-Pro.local-snapshots</name>
-            <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Robs-MacBook-Pro.local-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Robs-MacBook-Pro.local-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
